@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'proggyvec';
+    src: url('https://www.lexaloffle.com/dl/docs/proggyvec.woff') format('woff');
+}
+
+body{
+    font-size:12pt;
+    font-family : "proggyvec", "Courier New";
+    line-height: 1.6;	
+}
+
+h1{
+    font-size:36pt;
+    margin-top: 50px;
+    color:#222;
+}
+h2{
+    font-size:18pt;
+    margin-top: 30px;
+    color:#222;
+}
+h3{
+    font-size:16pt;
+    margin-top: 20px;
+    color:#222;
+}
+h4{
+    font-size:14pt;
+    margin-top: 20px;
+    color:#222;
+}
+h5{
+    font-size:12pt;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color:#222;
+}
+
+a{
+    text-decoration:none;
+    color:#111;
+    font-weight:bold;
+}
+
+p{
+    break-inside: avoid; 
+}
+
+.dark-mode {
+  -webkit-filter: invert(100%);
+    filter: invert(100%);
+    background-color:#222;
+}

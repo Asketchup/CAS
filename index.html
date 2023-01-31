@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carpeta CAS</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <div style="cursor:pointer; display:table; padding:20px" onclick="toggle_dark_mode();"> 
+    <img style="display:none" alt="Dark Mode" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAACCklEQVR4Ae2dwZGjMBBFNVN7hwxgI1BnMCICyxFYRGA5ApTBQATIGWgy0EbgVgYQwYoI2JqDq7yYNcIFrC99pGjq0f3/7+tb3/fkFer9JShuQbz30UuAxHHchTQYY3ZSys+lwYNW472PlFJFHMe/9/u94ZybUPDQ+jH1AiJSzrlp2zYlhJDD4aAZY7+WXs1DEK31Ic9zfftMKaU2dc0YBKUU0zRtNwNBRDqE+J4f59xsmiNCiDuIbxLGmN0MpCzLo3MO/nuyriXGWSDGmF3XdfErgPBHLzdNk24CgogPtWGtZZuATIl0amKr35prdV0Xa60Pa4BM3poxV61x9GZNhBBC2rZNpZTlqquhlGJI0/l8FlLKz9VWAwAYmqpVVcnrqp5ZEyJSAHCjE5l71Kqqkowxa639CO2x1n4AwGWYSUOQryiK/BwY5xxkWWYB4FKW5RER6djfl2V5BIBLlmXWex9zzr8eukYppU6n02wxOucgtG/sut+5RkpZhYr2mUqSpBlz3ah9tdZiLRBjDB8T9ygIALi6rheHqeta3DolKFmFEGdCCMnz/G6fz0Jcvzk74oUQZwBAzrlp2/Yvu83RhDGG/2sSwREPAA4RoSgKNcfaSZI0RVGopml+TkEQQshb3/dzxbYzxnBEhGEKU0rxOsFhTiwOsmR576Org2Zf3wVtvGOM2ZeYyG39AfiA/dXUMa3sAAAAEHRFWHRMb2RlUE5HADIwMTEwMjIx41m2wQAAAABJRU5ErkJggg==" />
+    <span style="font-size:32pt">&#9790;</span>
+    </div>
+    
+  <main style="max-width:99vw; width:820px; margin:auto; padding:12px;">
+    <h1>Carpeta CAS</h1>
+    <p> </p>
+    <hr>
+    <div onclick="el = document.getElementById('contents'); el.style.display = el.style.display == 'none' ? '': 'none';" style="display:inline;cursor:pointer;">[+] </div>
+    <b>Contenidos</b>: <a href="#Creatividad">Creatividad</a> | <a href="#Actividad">Actividad</a> | <a href="#Servicio">Servicio</a>
+    <div id="contents">
+      <p></p>
+      <a href="#Inicio">1. Inicio</a>
+      <br>
+      <a href="#Creatividad">2. Creatividad</a><br>
+      &nbsp;&nbsp;<a href="#_Videojuegos">2.1 Videojuegos</a><br>
+      &nbsp;&nbsp;<a href="#_Musica">2.2 Música</a><br>
+      <a href="#Actividad">3. Actividad</a><br>
+      &nbsp;&nbsp;<a href="#_Bicicleta">3.1 Bicicleta</a><br>
+      <a href="#Servicio">4. Servicio</a><br>
+      &nbsp;&nbsp;<a href="#_Biblioteca">4.1 Biblioteca</a><br>
+    </div>
+    <p> </p>
+    <hr>
+
+    <a href="#Inicio">
+      <h1 id="Inicio"><span style="font-size:48pt">❶</span> Inicio</h1>
+    </a>
+
+    <div>
+      <a href="#Creatividad">
+        <h1 id="Creatividad"><span style="font-size:48pt">❷</span> Creatividad</h1>
+      </a>
+
+      <a href="#_Videojuegos">
+        <h2 id="_Videojuegos">2.1 Videojuegos</h2>
+      </a>
+
+      <a href="#_Musica">
+        <h2 id="_Musica">2.2 Música</h2>
+      </a>
+    </div>
+
+    <div>
+      <a href="#Actividad">
+        <h1 id="Actividad"><span style="font-size:48pt">❸</span> Actividad</h1>
+        
+        <a href="#_Bicicleta">
+          <h2 id="_Bicicleta">3.1 Bicicleta</h2>
+        </a>
+      </a>
+    </div>
+
+    <div>
+      <a href="#Servicio">
+        <h1 id="Servicio"><span style="font-size:48pt">❹</span> Servicio</h1>
+        <a href="#_Biblioteca">
+          <h2 id="_Biblioteca">4.1 Biblioteca</h2>
+        </a>
+      </a>
+    </div>
+
+  </main>
+
+  <script>
+    function toggle_dark_mode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
+
+</body>
+</html>
