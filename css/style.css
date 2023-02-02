@@ -1,53 +1,89 @@
 @font-face {
     font-family: 'proggyvec';
-    src: url('https://www.lexaloffle.com/dl/docs/proggyvec.woff') format('woff');
+    src: url(proggyvec.woff) format('woff');
+}
+@font-face {
+    font-family: 'pico';
+    src: url(pico.ttf) format('truetype');
 }
 
 body{
-    font-size:12pt;
+    font-size:10pt;
     font-family : "proggyvec", "Courier New";
     line-height: 1.6;	
 }
-
+  
 h1{
-    font-size:36pt;
+    font-size:30pt;
     margin-top: 50px;
-    color:#222;
+    color:#444;
 }
 h2{
     font-size:18pt;
     margin-top: 30px;
-    color:#222;
+    color:#444;
 }
 h3{
     font-size:16pt;
     margin-top: 20px;
-    color:#222;
+    color:#444;
 }
 h4{
     font-size:14pt;
     margin-top: 20px;
-    color:#222;
+    color:#444;
 }
 h5{
     font-size:12pt;
     margin-top: 4px;
     margin-bottom: 4px;
-    color:#222;
+    color:#444;
 }
-
+  
 a{
     text-decoration:none;
-    color:#111;
+    color:#222;
     font-weight:bold;
 }
-
-p{
+  
+p, pre{
     break-inside: avoid; 
 }
 
-.dark-mode {
-  -webkit-filter: invert(100%);
-    filter: invert(100%);
-    background-color:#222;
+img{
+    margin: 10px;
+    border-radius: 10px;
 }
+img.cart{
+    opacity: 0.8;
+    box-shadow: #000;
+    transition: 0.3s;
+}
+img.cart:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+  
+.codebox{
+    font-family: "pico", "proggyvec";
+    display:block;
+    break-inside: avoid;
+    width:90%;
+    padding:16px;
+    margin-top:16px;
+    margin-bottom:24px;
+  
+    border-width:2px;
+    border-radius:15px;
+    border-style:solid;
+    border-color:#444;
+    overflow-x:auto;-webkit-overflow-scrolling:touch;
+}
+  
+.dark-mode {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    background-color:#000;
+}
+  
+      
