@@ -6,7 +6,106 @@
   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <title>Carpeta CAS</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <style type="text/css">
+@font-face {
+    font-family: 'proggyvec';
+    src: url(fonts/proggyvec.woff) format('woff');
+}
+@font-face {
+    font-family: 'pico';
+    src: url(fonts/pico.ttf) format('truetype');
+}
+
+body{
+    font-size:10pt;
+    font-family : "proggyvec", "Courier New";
+    line-height: 1.6;	
+}
+  
+h1{
+    font-size:30pt;
+    margin-top: 50px;
+    color:#444;
+}
+h2{
+    font-size:18pt;
+    margin-top: 30px;
+    color:#444;
+}
+h3{
+    font-size:16pt;
+    margin-top: 20px;
+    color:#444;
+}
+h4{
+    font-size:14pt;
+    margin-top: 20px;
+    color:#444;
+}
+h5{
+    font-size:12pt;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color:#444;
+}
+  
+a{
+    text-decoration:none;
+    color:#222;
+    font-weight:bold;
+}
+  
+p, pre{
+    break-inside: avoid; 
+}
+
+img{
+    margin: 10px;
+    border-radius: 10px;
+}
+img.cart{
+    opacity: 0.8;
+    box-shadow: #000;
+    transition: 0.3s;
+}
+img.cart:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+  
+.codebox{
+    display:block;
+    break-inside: avoid;
+    width:90%;
+    padding:16px;
+    margin-top:16px;
+    margin-bottom:24px;
+  
+    border-width:2px;
+    border-radius:15px;
+    border-style:solid;
+    border-color:#444;
+    overflow-x:auto;-webkit-overflow-scrolling:touch;
+}
+
+.pico {
+    font-family: "pico", "proggyvec";
+    font-size: 8pt;
+}
+
+.inside {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dark-mode {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    background-color:#000;
+}
+  </style>
 </head>
 
 <body>
@@ -1105,8 +1204,8 @@ def get_plg(a, b, c, d, clr):
         color=clr,
         fill_color=clr,
         fill_opacity=0.3
-      )
-      return plg
+    )
+    return plg
 </code>
 
     </div>
