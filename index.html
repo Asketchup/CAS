@@ -61,7 +61,7 @@ p, pre{
     break-inside: avoid; 
 }
 
-img{
+img, video, iframe, audio{
     margin: 10px;
     border-radius: 10px;
 }
@@ -92,7 +92,6 @@ img.cart:hover{
 
 .pico {
     font-family: "pico", "proggyvec";
-    font-size: 8pt;
 }
 
 .inside {
@@ -122,7 +121,7 @@ img.cart:hover{
     </a>
     <div>
       <p>
-        Esta página es mi carpeta CAS :> <br>
+        Esta página es mi carpeta CAS <コ:彡<br>
         . <br>
         . <br>
         . <br>
@@ -138,6 +137,7 @@ img.cart:hover{
         <a href="#Creatividad">1. Creatividad</a><br>
         &nbsp;&nbsp;<a href="#_Videojuegos">1.1 Videojuegos</a><br>
         &nbsp;&nbsp;<a href="#_Musica">1.2 Música</a><br>
+        &nbsp;&nbsp;<a href="#_Revista">1.3 Revista</a><br>
         <a href="#Actividad">2. Actividad</a><br>
         &nbsp;&nbsp;<a href="#_Bicicleta">2.1 Bicicleta</a><br>
         <a href="#Servicio">3. Servicio</a><br>
@@ -287,7 +287,7 @@ function _draw()
   end
 end
 </code>
-</pre>
+      </pre>
 
       <a href="#Adventure">
         <h3 id="Adventure">▨ Adventure</h3>
@@ -528,7 +528,7 @@ function draw_win_lose()
   print("press × to play again", 20, 62, 5)
 end
 </code>
-</pre>
+      </pre>
 
       <a href="#Bunny">
         <h3 id="Bunny">▨ Bunny</h3>
@@ -543,37 +543,6 @@ end
         onclick="el = document.getElementById('bunny_code'); el.style.display = el.style.display == 'none' ? '': 'none';"
         style="display:inline;cursor:pointer;">[+] </div> El código...
       <pre id="bunny_code" , style="display: none;">
-<code class="codebox pico">
-function _init()
-  game_over=false
-  make_cave()
-  make_player()
-end
-
-function _update()
-  if not game_over then
-    update_cave()
-    move_player()
-	  check_hit()
-  else
-    if (btnp(×)) _init()
-  end
-end
-
-function _draw()
-  cls(12)
-  draw_cave()
-  draw_player()
-	
-  if game_over then
-    print("game over!", 43, 50, 7)
-    print("your score:"..p.score, 39, 58, 7)
-    print("press × to play again!", 20, 70, 7)
-  else
-    print("score:"..p.score, 2, 2, 12)
-  end
-end
-</code>
 <code class="codebox pico">
 --player
 
@@ -660,7 +629,7 @@ function draw_cave()
   end
 end
 </code>
-</pre>
+      </pre>
 
       <a href="#Pong">
         <h3 id="Pong">▨ Pong</h3>
@@ -729,7 +698,7 @@ function draw_paddles()
   rectfill(t.x, t.y, t.x + w, t.y + h, col)
 end
 </code>
-</pre>
+      </pre>
 
       <a href="#Pong2.0">
         <h3 id="Pong2.0">▨ Pong 2.0</h3>
@@ -826,21 +795,34 @@ function draw_paddles()
   --player2
 end --draw_paddles
     </code>
-</pre>
+      </pre>
 
 
       <a href="#_Musica">
         <h2 id="_Musica">1.2 Música</h2>
       </a>
+      <a href="#Piano">
+        <h3 id="Piano">▨ Piano</h3>
+      </a>
+
+      <audio controls>
+        <source src="rsc/Instrumento.wav">
+        <source src="rsc/Instrumento.mp3">
+        El navegador no soporta este elemento
+      </audio>
+      <p>De niño mi padre decidió meterme a clases de guitarra. Las primeras semanas, incluso meses, no fueron especialmente gratificantes para mí, y pedía con frecuencia que me sacaran de esa tortura física que son los callos, pero mi padre siempre me preguntaba: "¿Te gusta la música?", y me convencía de seguir. Con el pasar de los años, aunque mi destreza con la guitarra no iba en constante aumento, mi pasión por la música iba en exponencial crecimiento.</p>
+      <p>Nunca quise alcanzar la maestría tocando la guitarra, simplemente me interesaba disfrutar de la música, de su belleza, y sentirla en todas sus formas. Con el tiempo, he ido coleccionando instrumentos, ahora mismo soy poseedor de una guitarra española, otra eléctrica, un charango, un ukelele, una armónica, un bajo eléctrico y dos teclados, aunque mi domino de todos ellos deja bastante que desear, disfruto tocándolos. Entre mi colección, es el piano del que más disfruto pero, al ser tan diferente de la guitarra, siempre me ha costado.</p>
+      <p>En el proceso de aprender a tocar el piano, me he visto con los mismo problemas que con la guitarra -más si acaso pues no tengo tutor-: estirar los dedos de la mano derecha, coordinar las manos y apretar las teclas con fuerza usando el dedo meñique son algunos ejemplos, el último tal vez el peor. Esto sumado a que nunca he leido partituras en clave de fa, es casi como empezar de cero, pero es a su vez emocionante.</p>
+      <p>El primer movimiento de Moonlight Sonata es, seguramente, el más sencillo de los tres, y me ha costado horrores conseguir un resultado mínimamente aceptable, pero ha valido la pena. La experiencia de tocar una obra como esta es absolutamente inefable, solo puedo admirar a Bethoven al haber concebido una pieza tan magistralmente compleja a la par que bella. A pesar de los innumerables intentos y de la frustración que es sentir que cuanto uno más práctica peor lo hace, estoy orgulloso de haber conseguido un resultado que me satisfaga pues no ha sido fácil. Todavía quedan dos movimientos y medio por cubrir, unos 13 minutos, y sabiendo cómo es el útlimo, miedo tengo de saber el tiempo que me tomará, pero a la vez estoy impaciente. Después de haber conseguido esto, habiendo partido prácticamente de cero, me siento capaz de cualquier cosa, solo necesito el tiempo necesario para llevarla a cabo.</p>
 
       <a href="#_Revista">
         <h2 id="_Revista">1.3 Revista</h2>
       </a>
-      <video src="rsc/Pythagorean.mp4" width="100%" height="500px" controls></video>
+      <video src="rsc/Pythagorean.mp4" width="100%" height="auto" controls>Su navegador no soporta este elemento</video>
       <div
       onclick="el = document.getElementById('pythagorean_code'); el.style.display = el.style.display == 'none' ? '': 'none';"
       style="display:inline;cursor:pointer;">[+] </div> El código...
-    <pre id="pythagorean_code" , style="display: none;">
+      <pre id="pythagorean_code" , style="display: none;">
 <code class="codebox">
 from manim import *
 
@@ -1143,7 +1125,7 @@ class Pythagorean(Scene):
       # se desvanece el texto prff y el rectángulo
       self.play(FadeOut(prff, box), run_time=4)
 
-      # +-------------+#
+# +-------------+#
   
 #    ____________
 #   /_._._._._._.\
@@ -1207,6 +1189,10 @@ def get_plg(a, b, c, d, clr):
     )
     return plg
 </code>
+      </pre>
+      
+      <!-- <p>Esta animación la realiacé debido a que una compañera me pidió que hiciese algo para el apartado de Matemáticas de la revista de nuestro instituto, al parecer no tenían nada. Me dijo que podía demostrar algo, como el teorema de Pitágoras, o lo que quiera. Me gustó la idea y me puso a la labor.</p>
+      <p></p> -->
 
     </div>
 
@@ -1236,14 +1222,14 @@ def get_plg(a, b, c, d, clr):
         <h3 id="Fibonacci">▨ Fibonacci</h3>
       </a>
 
-      <video src="rsc/Fibonacci.mp4" width="100%" height="500px" controls></video>
-      <iframe src="rsc/fibonacci.pdf" frameborder="0" width="100%" height="500px"></iframe>
+      <video src="rsc/Fibonacci.mp4" width="100%" height="auto" controls></video>
+      <iframe src="rsc/fibonacci.pdf" frameborder="0" width="100%" height="450px"></iframe>
 
       <a href="#Euclides">
         <h3 id="Euclides">▨ Euclides</h3>
       </a>
 
-      <iframe src="rsc/euclides.pdf" frameborder="0" width="100%" height="500px"></iframe>
+      <iframe src="rsc/euclides.pdf" frameborder="0" width="100%" height="450px"></iframe>
 
     </div>
 
